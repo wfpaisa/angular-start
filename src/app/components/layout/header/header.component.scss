@@ -1,0 +1,17 @@
+header {
+  background: rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  h1{
+    margin: 0px;
+    font-size: 16px;
+    margin: 0 12px;
+    padding: 2px 4px;
+    background: #6100fd;
+    color: white;
+    border-radius: 4px;
+  }
+}
