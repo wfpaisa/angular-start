@@ -1,0 +1,5 @@
+<form action="">
+  <p>Mi nombre es: {{ nombre }}</p>
+  <input type="text" [(ngModel)]="nombre" name="nombre" />
+  <button (click)="onSave($event)">save</button>
+</form>
