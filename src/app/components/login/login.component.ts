@@ -7,7 +7,7 @@ import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges, TrackByFunction
 })
 
 // export class LoginComponent implements OnInit {
-export class LoginComponent implements OnChanges {
+export class LoginComponent implements OnChanges, OnInit, OnDestroy {
   name: string = '';
   ciudades: string[] = ['Madrid', 'Barcelona', 'Valencia', 'Sevilla'];
 
@@ -17,7 +17,13 @@ export class LoginComponent implements OnChanges {
 
   constructor() {}
 
-  // ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('Login Init');
+  }
+
+  ngOnDestroy(): void {
+    console.log('Login Destroy');
+  }
 
   onSave(e: Event) {
     e.preventDefault();

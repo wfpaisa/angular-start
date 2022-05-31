@@ -10,6 +10,8 @@ import { ButtonComponent } from './components/form/button/button.component';
 import { LoginComponent } from './components/login/login.component';
 import { CitiesComponent } from './components/login/components/cities/cities.component';
 import { MypipePipe } from './mypipe.pipe';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { MypipePipe } from './mypipe.pipe';
     LoginComponent,
     CitiesComponent,
     MypipePipe,
+    HomeComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

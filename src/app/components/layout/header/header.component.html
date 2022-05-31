@@ -1,4 +1,7 @@
 <header [ngStyle]="{ 'border-top': '4px solid ' + color }">
   <h1>{{ title }}</h1>
+  <a routerLink="/">Home</a>
+  <a routerLink="/login">Login</a>
+  <a routerLink="/about">About</a>
   <app-button color="#6100fd" text="Add" (btnClick)="toggleAddtask($event)"></app-button>
 </header>
