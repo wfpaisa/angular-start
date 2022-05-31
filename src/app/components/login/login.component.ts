@@ -11,6 +11,10 @@ export class LoginComponent implements OnChanges {
   name: string = '';
   ciudades: string[] = ['Madrid', 'Barcelona', 'Valencia', 'Sevilla'];
 
+  model = {
+    name: '',
+  };
+
   constructor() {}
 
   // ngOnInit(): void {}

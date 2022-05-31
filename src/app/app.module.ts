@@ -9,9 +9,18 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { ButtonComponent } from './components/form/button/button.component';
 import { LoginComponent } from './components/login/login.component';
 import { CitiesComponent } from './components/login/components/cities/cities.component';
+import { MypipePipe } from './mypipe.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, ButtonComponent, LoginComponent, CitiesComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    ButtonComponent,
+    LoginComponent,
+    CitiesComponent,
+    MypipePipe,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
