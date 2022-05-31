@@ -8,9 +8,10 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { ButtonComponent } from './components/form/button/button.component';
 import { LoginComponent } from './components/login/login.component';
+import { CitiesComponent } from './components/login/components/cities/cities.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, ButtonComponent, LoginComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, ButtonComponent, LoginComponent, CitiesComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

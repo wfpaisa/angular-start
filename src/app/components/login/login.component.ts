@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges, TrackByFunction } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 // export class LoginComponent implements OnInit {
-export class LoginComponent {
-  nombre: string = 'hola';
+export class LoginComponent implements OnChanges {
+  name: string = '';
+  ciudades: string[] = ['Madrid', 'Barcelona', 'Valencia', 'Sevilla'];
 
   constructor() {}
 
@@ -16,6 +17,15 @@ export class LoginComponent {
 
   onSave(e: Event) {
     e.preventDefault();
-    this.nombre = 'guardaous';
+    this.ciudades.push(this.name);
+    this.name = '';
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('Change');
+  }
+
+  ciudadsel(key: number) {
+    console.log('ciudad id', key);
   }
 }
