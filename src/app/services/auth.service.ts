@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Resolve } from '@angular/router';
+import { Observable, of } from 'rxjs';
+
+const departments = ['Administración', 'Contabilidad', 'Recursos Humanos', 'Ventas'];
 
 @Injectable({
   providedIn: 'root',
 })
-export class AuthService {
-  // constructor(private http: HttpClient) {}
-  // login(email: string, password: string) {
-  //   return (
-  //     this.http
-  //       .post<User>('/api/login', { email, password })
-  //       // this is just the HTTP call,
-  //       // we still need to handle the reception of the token
-  //       .shareReplay()
-  //   );
-  // }
+export class AuthService implements Resolve<any> {
+  resolve(): Observable<any> {
+    return of(departments);
+  }
 }
