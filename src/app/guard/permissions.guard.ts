@@ -10,11 +10,14 @@ export class PermissionsGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (localStorage.getItem('token')) {
+    if (localStorage.getItem('token') === '123') {
       return true;
     }
 
-    alert('no se tiene acceso');
+    const token = prompt('No tiene acceso, Introduce tu token (123)');
+    localStorage.setItem('token', token || '');
+
+    if (token === '123') return true;
     return false;
   }
 }

@@ -3,6 +3,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  background: rgb(40, 38, 48);
+  color: white;
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -24,6 +26,7 @@ pre {
 }
 a {
   background-color: transparent;
+  color: rgb(183, 0, 255);
 }
 abbr[title] {
   border-bottom: none;
